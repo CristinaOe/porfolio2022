@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+}
+
+/* .fas.fa-plus {
+  color: white;
+} */
+
+i {
+  align-content: center;
+}
+
+nav {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  text-align: right;
+  padding-top: 20px;
+  margin-right: 200px;
+}
+nav ol li {
+  line-height: 30px;
+  margin-right: 15px;
+}
+
+nav ol li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0.16em;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+#video {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  position: fixed;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 300px;
+  font-family: "Michroma", sans-serif;
+  font-size: 45px;
+  line-height: 82px;
+}
+
+.section.sec-about {
+  background-color: white;
+}
+
+.about-desc {
+  text-align: justify;
+  padding: 27px 45px;
+  line-height: 70px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 28px;
+  width: 60%;
+  margin-top: 20px;
+}
+
+#about {
+  display: flex;
+  gap: 140px;
+}
+
+.links {
+  margin-top: 250px;
+}
+
+.links h3 {
+  transition: transform 1s;
+}
+.links h3:hover {
+  transform: translateX(10%);
+}
+
+.links a:hover {
+  color: #464646;
+}
+.links a {
+  text-decoration: none;
+  color: #affc41;
+  font-size: 50px;
+  font-family: "Michroma", sans-serif;
+  line-height: 140px;
+  padding-top: 90px;
+}
