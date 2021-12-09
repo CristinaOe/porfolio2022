@@ -100,131 +100,34 @@ h1 {
 }
 
 /* projects section */
-
-/* .back-proj {
-  background-color: white;
-  width: 90%;
-  top: 90px;
-  height: 80vh;
-  margin: 0 auto;
-
-  padding: 10px;
-  position: relative;
-} */
-
 .sec-projects {
-  position: absolute;
+  background-color: black;
 }
 
 #projects {
-}
-.slider {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  /* display: flex;
-  width: 300px;
-  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, 50%); */
-}
-
-.slider-inner {
-  position: absolute;
-  top: 25%;
-  height: 70%;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  /* display: flex;
-  width: 300px;
-  height: 450px; */
-}
-
-.item {
-  position: relative;
-  display: inline-block;
-  width: 350px;
-  height: 90%;
-  overflow-x: scroll;
-  overflow: hidden;
-}
-
-.item img {
-  width: 350px;
-  height: 90%;
-  object-fit: cover;
-  display: block;
-  overflow-x: scroll;
-}
-
-.proj-img {
-  overflow-x: scroll;
-}
-
-.img-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 90%;
-  background: rgba(0, 0, 0, 0.6);
-  color: black;
-  font-family: "Noto Sans", sans-serif;
+  width: 150px;
+  height: 200px;
   display: flex;
   flex-direction: column;
+  margin: 5px;
+  align-items: center;
   justify-content: center;
-  opacity: 0%;
-  transition: opacity 0.25s;
+  background-color: red;
+  background-size: cover;
+  background-position: center;
 }
 
-.img-overlay--primary {
-  background: #fff;
+.project-item {
+  background-color: white;
+  padding: 10px 5px;
+  text-align: center;
+  width: 100%;
 }
+/* contact */
 
-.img-overlay > * {
-  transform: translateY(20px);
-  transition: transform 0.25s;
-  text-decoration: none;
-  color: black;
-}
-.img-overlay:hover {
-  opacity: 100%;
-}
-
-.img-overlay:hover > * {
-  transform: translateY(0);
-}
-
-.img-title {
-  font-size: 2em;
-  text-transform: uppercase;
-  font-family: "Noto Sans", sans-serif;
-  margin-left: 0.25em;
-}
-
-.img-desc {
-  font-size: 1.25em;
-  margin: 0.65em;
-}
-
-.check {
-  padding: 8px 25px;
-  float: right;
-  color: blue;
-  text-decoration: none;
-  cursor: pointer;
+#contact h3 {
+  padding: 50px;
+  font-size: 50px;
+  color: white;
   font-family: "Michroma", sans-serif;
-  text-align: right;
-}
-
-.check:hover {
-  font-style: italic;
 }
