@@ -9,10 +9,6 @@
   height: 100vh;
 }
 
-/* .fas.fa-plus {
-  color: white;
-} */
-
 i {
   align-content: center;
 }
@@ -39,13 +35,18 @@ nav ol li a {
   font-family: "Ubuntu Mono", monospace;
 }
 
+nav ol li a:hover {
+  font-style: italic;
+  opacity: 80%;
+}
+
 #video {
   text-align: center;
   width: 100%;
   height: 100vh;
   object-fit: cover;
   z-index: -1;
-  position: fixed;
+  position: absolute;
 }
 
 h1 {
@@ -192,9 +193,22 @@ h1 {
 
 /* contact */
 
+#video-contact {
+  text-align: center;
+
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
 #contact h3 {
+  position: absolute;
+  margin-top: 2600px;
+  top: 0;
+  left: 0;
   padding: 50px;
   font-size: 50px;
   color: white;
   font-family: "Michroma", sans-serif;
+  line-height: 30px;
 }
