@@ -104,25 +104,92 @@ h1 {
   background-color: black;
 }
 
-#projects {
-  width: 150px;
-  height: 200px;
+.dev-projects {
   display: flex;
-  flex-direction: column;
-  margin: 5px;
-  align-items: center;
-  justify-content: center;
-  background-color: red;
-  background-size: cover;
-  background-position: center;
+  justify-content: space-around;
+}
+
+#projects h2 {
+  color: white;
+  padding: 50px;
+
+  font-size: 30px;
+  font-family: "Michroma", sans-serif;
 }
 
 .project-item {
-  background-color: white;
-  padding: 10px 5px;
-  text-align: center;
+  position: relative;
+  width: 300px;
+}
+
+.project-item video {
+  height: 390px;
+  object-fit: cover;
+}
+
+.img-proj {
+  display: block;
   width: 100%;
 }
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.img-overlay-primary {
+  background: #fff;
+}
+
+.img-overlay > * {
+  transition: transform 0.25s;
+  transform: translateY(20px);
+}
+.img-overlay:hover {
+  opacity: 1;
+}
+
+.img-overlay:hover > * {
+  transform: translateY(0);
+}
+.img-title {
+  font-family: "Michroma", sans-serif;
+  color: black;
+  font-size: 1.7em;
+
+  margin-left: 0.7em;
+}
+
+.img-desc {
+  font-family: "Noto Sans", sans-serif;
+  color: black;
+  font-size: 1.25em;
+  margin: 0.7em;
+}
+
+.img-but {
+  font-family: "Michroma", sans-serif;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.img-but a {
+  text-decoration: none;
+
+  color: #affc41;
+}
+
 /* contact */
 
 #contact h3 {
