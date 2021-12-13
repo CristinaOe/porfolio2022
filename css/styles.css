@@ -58,6 +58,7 @@ h1 {
   line-height: 82px;
 }
 
+/* about section */
 .section.sec-about {
   background-color: white;
 }
@@ -123,9 +124,10 @@ h1 {
   width: 300px;
 }
 
-.project-item video {
+.project-item img {
   height: 390px;
   object-fit: cover;
+  opacity: 85%;
 }
 
 .img-proj {
