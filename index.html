@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Michroma&family=Noto+Sans:wght@400;700&family=Ubuntu+Mono&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       src="https://kit.fontawesome.com/8c5e1878d1.js"
       crossorigin="anonymous"
@@ -25,9 +26,29 @@
       <nav>
         <ol>
           <!-- <li><a href="#">home</a></li> -->
-          <li><a href="#about">about</a></li>
-          <li><a href="#projects">projects</a></li>
-          <li><a href="#contact">contact</a></li>
+          <li>
+            <a data-aos="fade-right" data-aos-duration="5000" href="#about"
+              >about</a
+            >
+          </li>
+          <li>
+            <a
+              data-aos="fade-right"
+              data-aos-duration="5000"
+              data-aos-delay="200"
+              href="#projects"
+              >projects</a
+            >
+          </li>
+          <li>
+            <a
+              data-aos="fade-right"
+              data-aos-duration="5000"
+              data-aos-delay="400"
+              href="#contact"
+              >contact</a
+            >
+          </li>
         </ol>
       </nav>
       <h1>
@@ -38,7 +59,7 @@
     <!-- start about section -->
     <div class="section sec-about">
       <div id="about">
-        <p class="about-desc">
+        <p class="about-desc" data-aos="fade-up" data-aos-duration="5000">
           Born and bred in Argentina. I lived in Barcelona for 5 years and moved
           to Berlin in December 2020. Throughout my life I have worked in
           different fields. Since I like many things, I am always learning
@@ -54,12 +75,25 @@
           in cool, creative and challenging projects.
         </p>
         <div class="links">
-          <h3>
+          <h3
+            id="video-link"
+            data-aos="fade-right"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1000"
+          >
             <a href="https://vimeo.com/cristinaoechsle" target="_blank">
               > video</a
             >
           </h3>
-          <h3>
+          <h3
+            id="resume-link"
+            data-aos="fade-left"
+            data-aos-delay="100"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1000"
+          >
             <a href="cristina-oechsle-resume.pdf" target="_blank"> resume < </a>
           </h3>
         </div>
@@ -69,8 +103,15 @@
     <!-- start projects section -->
     <div class="section sec-projects">
       <div id="projects">
-        <h2>Dev Projects</h2>
-        <div class="dev-projects">
+        <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          Dev Projects
+        </h2>
+        <div
+          class="dev-projects"
+          data-aos="fade-up"
+          data-aos-duration="6000"
+          data-aos-delay="100"
+        >
           <!-- 1st project -->
           <div class="project-item">
             <h3>Rent a Camp</h3>
@@ -106,6 +147,10 @@
       </div>
     </div>
     <!-- end contact section -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="js/app.js"></script>
   </body>
 </html>

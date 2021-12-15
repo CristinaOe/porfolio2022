@@ -135,8 +135,12 @@ h1 {
 .links h3 {
   transition: transform 1s;
 }
-.links h3:hover {
+#video-link:hover {
   transform: translateX(10%);
+}
+
+#resume-link:hover {
+  transform: translateX(-10%);
 }
 
 .links a:hover {
@@ -158,16 +162,19 @@ h1 {
 }
 
 #projects h2 {
-  color: white;
-  padding: 50px;
-  font-size: 30px;
+  -webkit-text-stroke: 0.25px white;
+  position: absolute;
+  letter-spacing: 0.1em;
+  margin-top: 350px;
+  font-size: 50px;
   font-family: "Michroma", sans-serif;
+  transform: rotate(-90deg);
 }
 
 .dev-projects {
   line-height: 90px;
-
   text-align: center;
+  padding-top: 200px;
 }
 
 .project-item {
@@ -177,7 +184,6 @@ h1 {
 .project-item h3 {
   color: white;
   font-size: 40px;
-
   font-family: "Michroma", sans-serif;
 }
 
