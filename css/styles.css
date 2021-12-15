@@ -138,7 +138,8 @@ h1 {
 #video-link:hover {
   transform: translateX(10%);
 }
-
+#resume {
+}
 #resume-link:hover {
   transform: translateX(-10%);
 }
@@ -155,7 +156,19 @@ h1 {
   line-height: 140px;
   padding-top: 90px;
 }
+.social-links {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.social-links i {
+  margin: 15px 20px;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
 
+.social-links i:hover {
+  transform: scale(0.85);
+}
 /* projects section */
 .sec-projects {
   background-color: black;
