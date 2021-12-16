@@ -56,11 +56,11 @@ h1 {
   font-family: "Michroma", sans-serif;
   font-size: 45px;
   line-height: 82px;
-  animation: fadeIn linear 3s;
-  -webkit-animation: fadeIn linear 3s;
-  -moz-animation: fadeIn linear 3s;
-  -o-animation: fadeIn linear 3s;
-  -ms-animation: fadeIn linear 3s;
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+  -moz-animation: fadeIn linear 2s;
+  -o-animation: fadeIn linear 2s;
+  -ms-animation: fadeIn linear 2s;
 }
 
 @keyframes fadeIn {
@@ -132,14 +132,14 @@ h1 {
   margin-top: 250px;
 }
 
-.links h3 {
-  transition: transform 1s;
+.video-link h3 {
+  transition: all 7s ease-in-out;
 }
+
 #video-link:hover {
   transform: translateX(10%);
 }
-#resume {
-}
+
 #resume-link:hover {
   transform: translateX(-10%);
 }
@@ -216,8 +216,29 @@ h1 {
   top: 0;
   left: 0;
   padding: 50px;
-  font-size: 50px;
+  padding-top: 100px;
+  font-size: 70px;
   color: white;
   font-family: "Michroma", sans-serif;
+  line-height: 85px;
+}
+
+#contact h2 a {
+  position: absolute;
+  margin-top: 2900px;
+  margin-left: 700px;
+  text-decoration: none;
+  top: 0;
+  left: 0;
+  padding: 50px;
+  font-size: 40px;
+  color: white;
+  letter-spacing: 0.12em;
+  font-family: "Ubuntu Mono", monospace;
   line-height: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+#contact a:hover {
+  transform: scale(0.93);
 }
