@@ -19,7 +19,7 @@
     ></script>
   </head>
   <body>
-    <div class="section sec-home">
+    <div class="section sec-home" id="home">
       <video autoplay muted loop id="video">
         <source src="images/back-video.mp4" type="video/mp4" />
       </video>
@@ -163,13 +163,27 @@
         <video autoplay muted loop id="video-contact">
           <source src="images/manos.mp4" type="video/mp4" />
         </video>
-        <h3>contact <br />with <br />me</h3>
+        <h3 data-aos="fade" data-aos-duration="3000" data-aos-delay="200">
+          contact <br />with <br />me
+        </h3>
         <h2>
-          <a class="mailto" href="mailto:crisoechsle@gmail.com"
+          <a
+            class="mailto"
+            href="mailto:crisoechsle@gmail.com"
+            data-aos="fade"
+            data-aos-duration="3000"
+            data-aos-delay="300"
             >crisoechsle@gmail.com</a
           >
         </h2>
-        <i class="fas fa-arrow-up"></i>
+        <a href="#home"
+          ><i
+            class="fas fa-arrow-up fa-5x"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          ></i
+        ></a>
       </div>
     </div>
     <!-- end contact section -->
