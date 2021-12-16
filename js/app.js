@@ -1,49 +1,26 @@
-// let images = [...document.querySelectorAll(".proj-img")];
-// let slider = document.querySelector(".slider");
-// let sliderWidth;
-// let imageWidth;
-// let current = 0;
-// let target = 0;
-// let ease = 0.05;
+// Project section modals
 
-// // images.forEach((img, index) => {
-// //   img.style.backgroundImage = `url(./images/${id + 1}.png)`;
-// // });
+const open = document.querySelectorAll(".open");
+const close = document.querySelectorAll(".modal-close");
+const modal_container = document.querySelectorAll(".modal_container");
 
-// window.addEventListener("resize", init);
+open.forEach(function (btn) {
+  btn.onclick = function () {
+    var modal = btn.getAttribute("data-modal");
+    document.getElementById(modal).style.display = "block";
+  };
+});
 
-// function lerp(start, end, t) {
-//   return start * (1 - t) + end * t;
-// }
+close.forEach(function (btn) {
+  btn.onclick = function () {
+    var modal = (btn.closest(".modal_container").style.display = "none");
+  };
+});
 
-// function setTransform(el, transform) {
-//   el.style.transform = transform;
-// }
+// open.addEventListener("click", () => {
+//   modal_container.classList.add("show");
+// });
 
-// function init() {
-//   sliderWidth = slider.getBoundingClientRect().width;
-//   imageWidth = sliderWidth / images.length;
-//   document.body.style.height = `${
-//     sliderWidth - (window.innerWidth - window.innerHeight)
-//   }px`;
-// }
-
-// function animate() {
-//   current = parseFloat(lerp(current, target, ease)).toFixed(2);
-//   target = window.scrollY;
-//   setTransform(slider, `translateX(-${current}px)`);
-//   animateImages();
-//   requestAnimationFrame(animate);
-// }
-
-// function animateImages() {
-//   let ratio = current / imageWidth;
-//   let intersectionRatioValue;
-//   images.forEach((image, idx) => {
-//     intersectionRatioValue = ratio - idx * 0.7;
-//     setTransform(image, `translateX(${intersectionRatioValue * 70}px)`);
-//   });
-// }
-
-// init();
-// animate();
+// close.addEventListener("click", () => {
+//   modal_container.classList.remove("show");
+// });

@@ -87,7 +87,7 @@
           <h3
             id="video-link"
             data-aos="fade-right"
-            data-aos-delay="400"
+            data-aos-delay="600"
             data-aos-anchor="#example-anchor"
             data-aos-offset="500"
             data-aos-duration="1000"
@@ -99,7 +99,7 @@
           <h3
             id="resume-link"
             data-aos="fade-left"
-            data-aos-delay="400"
+            data-aos-delay="600"
             data-aos-anchor="#example-anchor"
             data-aos-offset="500"
             data-aos-duration="1000"
@@ -130,12 +130,29 @@
           class="dev-projects"
           data-aos="fade-up"
           data-aos-duration="6000"
-          data-aos-delay="100"
+          data-aos-delay="300"
         >
           <!-- 1st project -->
           <div class="project-item">
-            <h3>Rent a Camp</h3>
-            <a href="https://rent-acamp.herokuapp.com/" target="_blank"></a>
+            <button class="open" data-modal="modal1">Rent a camp</button>
+          </div>
+          <div class="modal_container" id="modal1">
+            <div class="modal">
+              <p>
+                Clone of Airbnb inspired by one of the projects we did in Le
+                Wagon.
+              </p>
+              <button class="modal-close">close</button>
+            </div>
+          </div>
+          <div class="project-item">
+            <button class="open" data-modal="modal2">Tunap</button>
+          </div>
+          <div class="modal_container" id="modal2">
+            <div class="modal">
+              <p>Firt website I did with Wordpress</p>
+              <button class="modal-close">close</button>
+            </div>
           </div>
           <!-- 2nd project -->
           <div class="project-item">
