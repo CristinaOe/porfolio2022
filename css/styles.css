@@ -222,7 +222,7 @@ h1 {
 }
 /* modals */
 
-.modal_container {
+.modal-container {
   display: none;
   pointer-events: none;
   align-items: center;
@@ -234,6 +234,7 @@ h1 {
   height: 100vh;
   width: 100vw;
   z-index: 2;
+  pointer-events: auto;
 }
 
 /* .modal-container.show {

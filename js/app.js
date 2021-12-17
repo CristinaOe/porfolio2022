@@ -1,8 +1,8 @@
 // Project section modals
 
-const open = document.querySelectorAll(".open");
+const open = document.querySelectorAll(".modal-open");
 const close = document.querySelectorAll(".modal-close");
-const modal_container = document.querySelectorAll(".modal_container");
+const modal_container = document.querySelectorAll(".modal-container");
 
 open.forEach(function (btn) {
   btn.onclick = function () {
@@ -13,10 +13,15 @@ open.forEach(function (btn) {
 
 close.forEach(function (btn) {
   btn.onclick = function () {
-    var modal = (btn.closest(".modal_container").style.display = "none");
+    var modal = (btn.closest(".modal-container").style.display = "none");
   };
 });
 
+window.onclick = function (e) {
+  if (e.target.classList.contains("modal-container")) {
+    e.target.style.display = "none";
+  }
+};
 // open.addEventListener("click", () => {
 //   modal_container.classList.add("show");
 // });
