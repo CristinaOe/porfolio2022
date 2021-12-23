@@ -351,7 +351,7 @@ h1 {
 
 @media only screen and (max-width: 768px) {
   h1 {
-    font-size: 32px;
+    font-size: 26px;
   }
 
   nav ol li a {
@@ -365,7 +365,7 @@ h1 {
 
   .about-desc {
     padding: 0px 45px;
-    font-size: 16px;
+    font-size: 15px;
     width: 85%;
     line-height: 40px;
   }
@@ -379,7 +379,7 @@ h1 {
     text-align: center;
   }
   .links a {
-    font-size: 30px;
+    font-size: 22px;
     line-height: 57px;
     padding-top: 0px;
   }
@@ -400,22 +400,22 @@ h1 {
   /* project section */
 
   #projects h2 {
-    font-size: 30px;
-    margin-left: -130px;
+    font-size: 22px;
+    margin-left: -60px;
   }
 
   .project-item button {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   /* contact */
 
   #contact h3 {
-    font-size: 40px;
+    font-size: 33px;
   }
 
   #contact h2 a {
-    font-size: 28px;
+    font-size: 22px;
     margin-left: 25px;
     margin-top: 3000px;
     line-height: 50px;
