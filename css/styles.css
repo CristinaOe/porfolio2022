@@ -317,10 +317,12 @@ h1 {
 }
 
 #contact h2 a {
+  position: absolute;
   text-decoration: none;
   font-size: 40px;
-  margin-left: 640px;
-  /* z-index: 1; */
+  margin-left: 750px;
+  margin-top: 100px;
+  z-index: 3;
   color: white;
   letter-spacing: 0.12em;
   font-family: "Ubuntu Mono", monospace;
@@ -336,130 +338,13 @@ h1 {
   color: transparent;
   -webkit-text-stroke: 2px white;
 }
-/*
-.mailto a {
+/* 
+.mailto {
   text-align: center;
+  line-height: 150px;
 } */
 
 .fa-arrow-up {
-  margin-top: 330px;
+  margin-top: 360px;
   margin-left: 25px;
-}
-/* Media Query */
-
-@media only screen and (max-width: 1440px) {
-}
-
-@media only screen and (max-width: 768px) {
-  h1 {
-    margin-top: 170px;
-    font-size: 24px;
-  }
-
-  nav ol li a {
-    font-size: 15px;
-  }
-
-  #about {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .about-desc {
-    padding: 0px 45px;
-    font-size: 13px;
-    width: 85%;
-    line-height: 30px;
-  }
-
-  #about {
-    gap: 20px;
-  }
-
-  .links {
-    margin-top: 10px;
-    text-align: center;
-  }
-  .links a {
-    font-size: 22px;
-    line-height: 30px;
-    padding-top: 0px;
-  }
-  .big-links {
-    gap: 40px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .social-links a {
-    line-height: 0px;
-  }
-
-  .social-links {
-    margin-right: 70px;
-  }
-
-  /* project section */
-
-  #projects h2 {
-    margin-top: 278px;
-    font-size: 24px;
-    margin-left: -60px;
-  }
-
-  .project-item button {
-    font-size: 20px;
-  }
-
-  .dev-projects {
-    line-height: 50px;
-  }
-
-  /* modal */
-
-  .modal {
-    font-size: 13px;
-    width: 300px;
-    height: 150px;
-    padding: 20px 50px;
-  }
-  .modal img {
-    width: 50px;
-  }
-
-  .logo-treen img {
-    width: 50px;
-  }
-
-  .modal img:hover {
-    transform: scale(0.9);
-  }
-
-  .modal p {
-    line-height: 19px;
-    margin: 0px;
-    opacity: 0.7;
-  }
-
-  .modal-close {
-    font-size: 10px;
-  }
-
-  /* contact */
-
-  #contact h3 {
-    line-height: 50px;
-    font-size: 24px;
-  }
-
-  #contact h2 a {
-    font-size: 20px;
-    margin-left: 90px;
-
-    line-height: 50px;
-  }
-
-  .fa-arrow-up {
-    display: none !important;
-  }
 }

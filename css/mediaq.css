@@ -1,0 +1,192 @@
+/* Media Query */
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    margin-top: 170px;
+    font-size: 24px;
+  }
+
+  nav ol li a {
+    font-size: 15px;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-desc {
+    padding: 0px 45px;
+    font-size: 13px;
+    width: 85%;
+    line-height: 30px;
+  }
+
+  #about {
+    gap: 20px;
+  }
+
+  .links {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .links a {
+    font-size: 22px;
+    line-height: 30px;
+    padding-top: 0px;
+  }
+  .big-links {
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-links a {
+    line-height: 0px;
+  }
+
+  .social-links {
+    margin-right: 70px;
+  }
+
+  /* project section */
+
+  #projects h2 {
+    margin-top: 278px;
+    font-size: 24px;
+    margin-left: -60px;
+  }
+
+  .project-item button {
+    font-size: 20px;
+  }
+
+  .dev-projects {
+    line-height: 50px;
+  }
+
+  /* modal */
+
+  .modal {
+    font-size: 13px;
+    width: 300px;
+    height: 150px;
+    padding: 20px 50px;
+  }
+  .modal img {
+    width: 50px;
+  }
+
+  .logo-treen img {
+    width: 50px;
+  }
+
+  .modal img:hover {
+    transform: scale(0.9);
+  }
+
+  .modal p {
+    line-height: 19px;
+    margin: 0px;
+    opacity: 0.7;
+  }
+
+  .modal-close {
+    font-size: 10px;
+  }
+
+  /* contact */
+
+  #contact h3 {
+    line-height: 50px;
+    font-size: 24px;
+  }
+
+  #contact h2 a {
+    font-size: 20px;
+    margin-left: 90px;
+
+    line-height: 50px;
+  }
+
+  .fa-arrow-up {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  nav ol li a {
+    font-size: 18px;
+  }
+
+  /* about section */
+  .about-desc {
+    padding: 25px;
+    line-height: 55px;
+    font-size: 20px;
+    width: 65%;
+    margin-top: 10px;
+  }
+
+  #about {
+    gap: 20px;
+  }
+
+  .links {
+    margin-top: 230px;
+    margin-left: 20px;
+  }
+
+  .links a {
+    font-size: 35px;
+    line-height: 140px;
+    padding-top: 90px;
+  }
+  /* project section */
+
+  #projects h2 {
+    margin-top: 360px;
+    font-size: 35px;
+    margin-left: -60px;
+  }
+
+  .project-item button {
+    font-size: 25px;
+  }
+
+  .dev-projects {
+    line-height: 100px;
+  }
+
+  /* modal */
+  .modal {
+    width: 500px;
+    height: 250px;
+    font-size: 15px;
+  }
+  .modal p {
+    line-height: 26px;
+    margin: 0px 30px;
+  }
+  /* contact */
+
+  #contact h3 {
+    line-height: 100px;
+    font-size: 55px;
+  }
+
+  #contact h2 a {
+    font-size: 34px;
+    margin-left: 420px;
+
+    line-height: 100px;
+  }
+
+  .fa-arrow-up {
+    margin-top: 330px;
+  }
+}
