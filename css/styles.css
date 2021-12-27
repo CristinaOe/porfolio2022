@@ -294,40 +294,38 @@ h1 {
 /* contact */
 
 #video-contact {
+  position: absolute;
   text-align: center;
-  display: block;
+  /* display: block; */
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  z-index: -1;
 }
 
 #contact h3 {
-  position: absolute;
-  margin-top: 2600px;
-  top: 0;
-  left: 0;
-  padding: 50px;
-  padding-top: 100px;
+  /* position: relative;
+  /* margin-top: 2600px; */
+  /* top: 0;
+  left: 0;  */
+  padding: 50px 30px;
   font-size: 70px;
   color: white;
   font-family: "Michroma", sans-serif;
-  line-height: 85px;
+  line-height: 115px;
+  z-index: 1;
 }
 
 #contact h2 a {
-  position: absolute;
-  margin-top: 2900px;
-  margin-left: 700px;
   text-decoration: none;
-  top: 0;
-  left: 0;
-  padding: 50px;
   font-size: 40px;
+  margin-left: 640px;
+  /* z-index: 1; */
   color: white;
   letter-spacing: 0.12em;
   font-family: "Ubuntu Mono", monospace;
   line-height: 30px;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #contact a:hover {
@@ -338,11 +336,14 @@ h1 {
   color: transparent;
   -webkit-text-stroke: 2px white;
 }
+/*
+.mailto a {
+  text-align: center;
+} */
 
 .fa-arrow-up {
-  position: absolute !important;
-  margin-top: -120px;
-  margin-left: 1550px;
+  margin-top: 330px;
+  margin-left: 25px;
 }
 /* Media Query */
 
@@ -351,7 +352,8 @@ h1 {
 
 @media only screen and (max-width: 768px) {
   h1 {
-    font-size: 26px;
+    margin-top: 170px;
+    font-size: 24px;
   }
 
   nav ol li a {
@@ -365,22 +367,22 @@ h1 {
 
   .about-desc {
     padding: 0px 45px;
-    font-size: 15px;
+    font-size: 13px;
     width: 85%;
-    line-height: 40px;
+    line-height: 30px;
   }
 
   #about {
-    gap: 30px;
+    gap: 20px;
   }
 
   .links {
-    margin-top: 0px;
+    margin-top: 10px;
     text-align: center;
   }
   .links a {
     font-size: 22px;
-    line-height: 57px;
+    line-height: 30px;
     padding-top: 0px;
   }
   .big-links {
@@ -400,30 +402,64 @@ h1 {
   /* project section */
 
   #projects h2 {
-    font-size: 22px;
+    margin-top: 278px;
+    font-size: 24px;
     margin-left: -60px;
   }
 
   .project-item button {
-    font-size: 24px;
+    font-size: 20px;
+  }
+
+  .dev-projects {
+    line-height: 50px;
+  }
+
+  /* modal */
+
+  .modal {
+    font-size: 13px;
+    width: 300px;
+    height: 150px;
+    padding: 20px 50px;
+  }
+  .modal img {
+    width: 50px;
+  }
+
+  .logo-treen img {
+    width: 50px;
+  }
+
+  .modal img:hover {
+    transform: scale(0.9);
+  }
+
+  .modal p {
+    line-height: 19px;
+    margin: 0px;
+    opacity: 0.7;
+  }
+
+  .modal-close {
+    font-size: 10px;
   }
 
   /* contact */
 
   #contact h3 {
-    font-size: 33px;
+    line-height: 50px;
+    font-size: 24px;
   }
 
   #contact h2 a {
-    font-size: 22px;
-    margin-left: 25px;
-    margin-top: 3000px;
+    font-size: 20px;
+    margin-left: 90px;
+
     line-height: 50px;
   }
 
   .fa-arrow-up {
-    position: absolute !important;
-    margin-top: -120px;
-    margin-left: 50px;
+    display: none !important;
   }
 }
