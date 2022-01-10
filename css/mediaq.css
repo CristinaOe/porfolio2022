@@ -1,13 +1,22 @@
 /* Media Query */
 
+/* @media only screen and (max-width: 568px) {
+  h1 {
+    line-height: 50px;
+    margin-top: 200px !important;
+    font-size: 24px !important;
+  }
+} */
+
 @media only screen and (max-width: 768px) {
   h1 {
-    margin-top: 170px;
-    font-size: 24px;
+    line-height: 50px;
+    margin-top: 200px !important;
+    font-size: 24px !important;
   }
 
   nav ol li a {
-    font-size: 15px;
+    font-size: 15px !important;
   }
 
   #about {
@@ -16,10 +25,10 @@
   }
 
   .about-desc {
-    padding: 0px 45px;
-    font-size: 13px;
-    width: 85%;
-    line-height: 30px;
+    padding: 5px 45px !important;
+    font-size: 13px !important;
+    width: 85% !important;
+    line-height: 34px !important;
   }
 
   #about {
@@ -27,22 +36,23 @@
   }
 
   .links {
-    margin-top: 10px;
+    margin-top: 10px !important;
     text-align: center;
   }
   .links a {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 22px !important;
+    line-height: 30px !important;
     padding-top: 0px;
   }
   .big-links {
-    gap: 40px;
+    gap: 40px !important;
     display: flex;
     justify-content: center;
   }
 
   .social-links a {
-    line-height: 0px;
+    font-size: 26px !important;
+    margin-top: -20px !important;
   }
 
   .social-links {
@@ -52,33 +62,33 @@
   /* project section */
 
   #projects h2 {
-    margin-top: 278px;
-    font-size: 24px;
+    margin-top: 278px !important;
+    font-size: 24px !important;
     margin-left: -60px;
   }
 
   .project-item button {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 
   .dev-projects {
-    line-height: 50px;
+    line-height: 50px !important;
   }
 
   /* modal */
 
   .modal {
-    font-size: 13px;
-    width: 300px;
-    height: 150px;
-    padding: 20px 50px;
+    font-size: 13px !important;
+    width: 300px !important;
+    height: 150px !important;
+    padding: 20px 50px !important;
   }
   .modal img {
-    width: 50px;
+    width: 50px !important;
   }
 
   .logo-treen img {
-    width: 50px;
+    width: 50px !important;
   }
 
   .modal img:hover {
@@ -86,27 +96,27 @@
   }
 
   .modal p {
-    line-height: 19px;
-    margin: 0px;
-    opacity: 0.7;
+    line-height: 19px !important;
+    margin: 0px !important;
+    opacity: 0.7 !important;
   }
 
   .modal-close {
-    font-size: 10px;
+    font-size: 10px !important;
   }
 
   /* contact */
 
   #contact h3 {
-    line-height: 50px;
-    font-size: 24px;
+    line-height: 50px !important;
+    font-size: 24px !important;
   }
 
   #contact h2 a {
-    font-size: 20px;
-    margin-left: 90px;
+    font-size: 20px !important;
+    margin-left: 90px !important;
 
-    line-height: 50px;
+    line-height: 50px !important;
   }
 
   .fa-arrow-up {
