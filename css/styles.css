@@ -59,7 +59,9 @@ h1 {
   text-align: center;
   margin-top: 300px;
   font-family: "Michroma", sans-serif;
-  font-size: 45px;
+  letter-spacing: 0.05em;
+  font-size: 43px;
+  opacity: 85%;
   line-height: 82px;
   animation: fadeIn linear 2s;
   -webkit-animation: fadeIn linear 2s;
